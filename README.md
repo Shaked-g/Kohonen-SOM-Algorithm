@@ -1,6 +1,6 @@
 # Kohonen-SOM-Algorithm
 Kohonen  (SOM) Algorithm
-By Shaked Gofin 316407576
+By Shaked Gofin
 Part A: Implementing the Kohonen algorithm and use it to fit a line of neurons to a data in the shape of a square.
 In order of achieving the data points of a square with parameters of {(x,y) |  0 <= x <= 1, 0<=y<=1} I used np.random.rand(5000, 2) which returns 5000 pairs of randomize numbers between [0,1) thus giving us data points of a square as can be seen in the main function:
 
