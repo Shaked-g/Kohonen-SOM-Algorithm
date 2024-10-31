@@ -1,7 +1,16 @@
 # Kohonen-SOM-Algorithm
-Kohonen  (SOM) Algorithm
-By Shaked Gofin
+### By Shaked Gofin
 
+
+
+## Self-Organizing Map (SOM) Overview
+A Self-Organizing Map (SOM) is an unsupervised neural network model that performs both dimensionality reduction and data clustering. In this project, the SOM organizes high-dimensional data onto a lower-dimensional (2D) grid, preserving the original topological relationships within the data.
+
+The SOM consists of a grid of neurons, each initialized with random weight vectors. During training, each data point is compared to all neurons, and the closest neuron (called the Best Matching Unit or BMU) is updated to become more similar to that data point. This process, applied over many iterations, gradually organizes similar data points to map closer together on the SOM grid.
+
+In this project, the SOM is used to visualize and cluster data points sampled from different distributions. It adapts to data patterns and can cluster points into shapes like a square or a “donut,” showing how the data clusters or structures evolve over time. Visualization of the SOM grid helps in understanding the data’s underlying patterns and structure, making it a powerful tool for exploratory data analysis.
+
+## Implementation
 Part A: Implementing the Kohonen algorithm and use it to fit a line of neurons to a data in the shape of a square.
 In order of achieving the data points of a square with parameters of {(x,y) |  0 <= x <= 1, 0<=y<=1} I used np.random.rand(5000, 2) which returns 5000 pairs of randomize numbers between [0,1) thus giving us data points of a square as can be seen in the main function:
 
